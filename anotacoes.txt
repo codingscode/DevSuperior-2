@@ -89,6 +89,13 @@ digitar no navegador:
 http://localhost:8080/
 http://localhost:8080/h2-console
 
+--------------
+
+rodar projeto e em "http://localhost:8080/h2-console":
+    e no campo "JDBC URL" digitar o mesmo no arquivo "application-test.properties", -> "jdbc:h2:mem:testdb"
+    depois clicar em "Connect"
+
+--------------
 
 
 
