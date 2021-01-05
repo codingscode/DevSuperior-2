@@ -12,7 +12,7 @@ Mon Jan 04 22:37:40 BRST 2021
 There was an unexpected error (type=Not Found, status=404).
 -------------------
 
-ir no arquivo pm.xml
+ir no arquivo pom.xml
     apagar o conteudo da tag "dependencies" e colar o seguinte:
           <dependency>
 	<groupId>org.springframework.boot</groupId>
@@ -75,6 +75,12 @@ spring.h2.console.path=/h2-console
 ------------------
 
 no mesmo local criar arquivo com nome "application-dev.properties" e conteudo:
+spring.datasource.url=${DATABASE_URL}
+
+---------------
+
+criação de uma classe "SecurityConfig"
+
 
 
 
