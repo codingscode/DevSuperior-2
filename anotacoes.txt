@@ -83,7 +83,11 @@ criação de uma classe "SecurityConfig"
 
 colar código e usar atalho ctrl + shift + o para fazer os imports
 
+------------------
 
+digitar no navegador:
+http://localhost:8080/
+http://localhost:8080/h2-console
 
 
 
