@@ -81,6 +81,10 @@ spring.datasource.url=${DATABASE_URL}
 
 criação de uma classe "SecurityConfig"
 
+colar código e usar atalho ctrl + shift + o para fazer os imports
+
+
+
 
 
 
