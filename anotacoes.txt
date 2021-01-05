@@ -97,6 +97,10 @@ rodar projeto e em "http://localhost:8080/h2-console":
 
 --------------
 
+em src/main/resources criar arquivo com nome "data.sql" e colar codigo.
+
+entrar em "http://localhost:8080/h2-console", em "TB_PRODUCT" clicar em "Run" e ver a tabela.
+
 
 
 
