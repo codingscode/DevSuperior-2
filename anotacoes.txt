@@ -110,6 +110,46 @@ ir em "Collections" -> criar collection "DSDeliver" -> depois de criado ir em "a
 ver de novo a requisição
 ... -> em "GET" digitar "http://localhost:8080/orders" -> clicar em save e send.
 
+... -> em "POST" (trocar o método), nova coleção "New order" digitar "http://localhost:8080/orders" -> clicar em save e send.
+Na aba "Body" -> row/JSON , digitar no corpo:
+{
+   "address": "Avenida Paulista, 1500",
+   "latitude": "-23.56168",
+   "longitude": "-46.656139",
+   "products": [
+       {"id": 2},
+       {"id": 5}
+   ]
+}
+
+clicar em send.
+aparece:
+{
+    "id": 8,
+    "address": "Avenida Paulista, 1500",
+    "latitude": -23.56168,
+    "longitude": -46.656139,
+    "moment": "2021-01-06T15:23:33.417168900Z",
+    "status": "PENDING",
+    "products": [
+        {
+            "id": 2,
+            "name": "Pizza Moda da Casa",
+            "price": 59.9,
+            "description": "Pizza à moda da casa, com molho especial e todos ingredientes básicos, e queijo à sua escolha.",
+            "imageUri": "https://raw.githubusercontent.com/devsuperior/sds2/master/assets/pizza_moda.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Risoto Funghi",
+            "price": 59.95,
+            "description": "Risoto Funghi feito com ingredientes finos e o toque especial do chef.",
+            "imageUri": "https://raw.githubusercontent.com/devsuperior/sds2/master/assets/risoto_funghi.jpg"
+        }
+    ]
+}
+
+--------------------------
 
 
 
