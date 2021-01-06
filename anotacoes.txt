@@ -184,6 +184,17 @@ abrir o software postman:
 observar o id=3 e seu status é 1.
 
 
+abrir pgAdmin(do postgrl):
+   criar database "dsdelivered"
+   
+
+no springboot, no arquivo src/main/resources -> application.properties:
+   modificar arquivo e mudar uma linha para -> spring.profiles.active=dev
+   observar arquivo application-dev.properties e descomentar as linhas comentadas
+
+rodar projeto
+observar senha, deve ser a mesma. Mudei a senha de "1234567" para "din1". tava dando erro.
+um arquivo create.sql é criado
 
 
 
