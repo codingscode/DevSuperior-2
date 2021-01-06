@@ -108,7 +108,7 @@ rodar programa
 abrir o software postman:
 ir em "Collections" -> criar collection "DSDeliver" -> depois de criado ir em "addrequest" -> em "GET" digitar "http://localhost:8080/products" -> clicar em save e send.
 ver de novo a requisição
-
+... -> em "GET" digitar "http://localhost:8080/orders" -> clicar em save e send.
 
 
 
