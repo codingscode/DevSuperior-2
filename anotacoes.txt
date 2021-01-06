@@ -212,9 +212,9 @@ comentar de novo as 4 linhas que antes estavam comentadas
 
 o arquivo create.sql antes do commit seguinte é desnecessario e será apagado.
 
+copiar conteudo do arquivo "data.sql" para pgAdmin e colar query editor e executar.
 
-
-
+depois em cada tabela ir em view/edit data -> all rows
 
 
 
