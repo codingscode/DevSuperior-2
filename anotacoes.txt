@@ -216,11 +216,31 @@ copiar conteudo do arquivo "data.sql" para pgAdmin e colar query editor e execut
 
 depois em cada tabela ir em view/edit data -> all rows
 
+ir no site do heroku
+   criar new app
+   copiar "postgres://ibooklhoxxgddx:8118f4040d5a997fc0306aa84136c8f5b493adbda98b2b14d2fed17194f52cc8@ec2-52-71-153-228.compute-1.amazonaws.com:5432/d6p43u7tbnurb0"
+
+   postgres://
+   ibooklhoxxgddx
+   :
+   8118f4040d5a997fc0306aa84136c8f5b493adbda98b2b14d2fed17194f52cc8
+   @
+   ec2-52-71-153-228.compute-1.amazonaws.com
+   :
+   5432
+   /
+   d6p43u7tbnurb0
 
 
+em pgAdmin:
+   criar em Servers:
+   
 
+Front-End:
 
-
+digitar no terminal da pasta:
+      npx create-react-app front-web --template typescript --use-npm
+      npm start,     ver no browser http://localhost:3000/
 
 
 
