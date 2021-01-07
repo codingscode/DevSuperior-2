@@ -11,7 +11,7 @@ export default function ProductsList({ products }: Props) {
         <div className="orders-list-container">
             <div className="orders-list-items">
                {products.map(product => (
-                   <ProductCard />
+                   <ProductCard key={product.id} product={product} />
                ))}
             </div>
         </div>
