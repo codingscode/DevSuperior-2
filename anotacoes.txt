@@ -249,7 +249,7 @@ no terminal:  npm install react-router-dom
               npm install @types/react-router-dom
 https://reactrouter.com/web/example/basic
 
-
+clicando em "FAZER PEDIDO" vai para ..../orders
 
 
 
