@@ -7,6 +7,9 @@ export default function App() {
     <div>
         <h1>Hello SDS2</h1>
         <Hello message="Dev" />
+        <Hello message="Programador" />
+        <Hello message="Cientista" />
+        <Hello message="Estudante" />
     </div>
   )
 }
