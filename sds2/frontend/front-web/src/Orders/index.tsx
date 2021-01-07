@@ -19,7 +19,7 @@ export default function Orders() {
     return (
         <div className="orders-container">
             <StepsHeader />
-            <ProductsList />
+            <ProductsList products={products} />
         </div>
     )
 }

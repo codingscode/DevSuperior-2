@@ -253,7 +253,7 @@ clicando em "FAZER PEDIDO" vai para ..../orders
 
 executando o backend com java springboot, mudar uma linha em "application.properties" para "test"
 
-
+itera sobre a quantidade de listas
 
 
 
