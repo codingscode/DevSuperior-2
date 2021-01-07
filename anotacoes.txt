@@ -242,7 +242,7 @@ digitar no terminal da pasta:
       npx create-react-app front-web --template typescript --use-npm
       npm start,     ver no browser http://localhost:3000/
 
-
+aumentando e diminuindo valor de counter
 
 
 
