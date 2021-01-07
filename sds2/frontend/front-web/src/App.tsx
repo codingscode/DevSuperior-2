@@ -1,12 +1,11 @@
 import './App.css'
-import Counter from './Counter'
+import Navbar from './Navbar'
 
 
 export default function App() {
   return (
     <div>
-        
-        <Counter />
+        <Navbar />
     </div>
   )
 }
