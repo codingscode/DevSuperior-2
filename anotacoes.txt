@@ -234,7 +234,30 @@ ir no site do heroku
 
 em pgAdmin:
    criar em Servers:
+
+ajeitando.
+postgres://vjvdjfgermdpxg:0596c5e9ebc19702cad6eaf0d6a01e3eb37a5ada2f611de42ab367bc8f76f45f@ec2-50-16-221-180.compute-1.amazonaws.com:5432/d6kpuq1odjadd5
+
+quebrando:
+postgres://
+
+vjvdjfgermdpxg  <- usuario
+:
+0596c5e9ebc19702cad6eaf0d6a01e3eb37a5ada2f611de42ab367bc8f76f45f <-senha
+@
+ec2-50-16-221-180.compute-1.amazonaws.com   <- host
+:
+5432  <- porta
+/
+d6kpuq1odjadd5   <- nome base de dados
+
    
+git subtree push --prefix sds2/backend/dsdeliver heroku main
+https://heronnes-sds2.herokuapp.com/
+
+
+
+
 
 Front-End:
 
