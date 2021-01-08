@@ -299,9 +299,10 @@ colar isto em public/index.html
 
 o mapa se organiza agora
 
+https://react-select.com/
+digitar no terminal da pasta:  npm install react-select @types/react-select
 
-
-
+não consegue pesquisar ainda. dá 401 unauthorized
 
 
 
