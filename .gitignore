@@ -56,7 +56,7 @@ DerivedData
 project.xcworkspace
 
 # Gradle
-/build/
+
 /packages/react-native-codegen/android/build/
 /packages/react-native-codegen/android/gradlePlugin-build/gradlePlugin/build
 /packages/rn-tester/android/app/.cxx/
@@ -174,7 +174,6 @@ target/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
