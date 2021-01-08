@@ -304,8 +304,8 @@ digitar no terminal da pasta:  npm install react-select @types/react-select
 
 não consegue pesquisar ainda. dá 401 unauthorized
 
-
-
+criar conta no mapbox
+digitando aparece os nomes parecidos e selecionando o mapa não atualiza
 
 
 
