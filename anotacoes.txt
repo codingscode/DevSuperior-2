@@ -312,6 +312,7 @@ os items selecionados ficam verdes , e desmarcando deixam de ser
 
 já traz a quantidade de produtos selecionados e o preço total
 
+formatando preço
 
 
 

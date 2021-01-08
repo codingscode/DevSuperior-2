@@ -1,3 +1,5 @@
+import { formatPrice } from './helpers'
+
 type Props = {
     amount: number
     totalPrice: number
@@ -13,7 +15,7 @@ export default function OrderSummary({ amount, totalPrice }: Props) {
                         <strong className="amount-selected">{amount}</strong>PEDIDOS SELECIONADOS
                     </span>
                     <span className="order-summary-total">
-                        <strong className="amount-selected">R$ {totalPrice}</strong>VALOR TOTAL
+                        <strong className="amount-selected">{formatPrice(totalPrice)}</strong>VALOR TOTAL
                     </span>
                 </div>
                 <button className="order-summary-make-order" >FAZER PEDIDO</button>
