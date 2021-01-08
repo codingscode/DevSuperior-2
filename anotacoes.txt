@@ -308,7 +308,7 @@ criar conta no mapbox
 digitando aparece os nomes parecidos e selecionando o mapa não atualiza, somente o marcador.
 agora faz.
 
-
+os items selecionados ficam verdes , e desmarcando deixam de ser
 
 
 
