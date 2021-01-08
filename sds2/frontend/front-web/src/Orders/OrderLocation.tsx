@@ -58,14 +58,14 @@ export default function OrderLocation() {
                            className="filter" loadOptions={loadOptions} onChange={value => handleChangeSelect(value as Place)} />
 
                 </div>
-                <MapContainer center={address.position} zoom={15.5} scrollWheelZoom={true}>
+                <MapContainer key={address.position.lat} center={address.position} zoom={15.5} scrollWheelZoom={true}>
                     <TileLayer
                     attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
                     <Marker position={address.position}>
                         <Popup>
-                            Minha localização. <br /> Easily customizable.
+                            {address.label}
                         </Popup>
                     </Marker>
                 </MapContainer>
