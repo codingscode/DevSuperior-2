@@ -278,6 +278,16 @@ executando o backend com java springboot, mudar uma linha em "application.proper
 
 itera sobre a quantidade de listas
 
+continuação do Front:
+
+https://react-leaflet.js.org/
+
+digitar no terminal da pasta: npm install leaflet react-leaflet
+                              npm install -D @types/leaflet
+
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+
+rodando a aplicação o mapa aparece embaralhado
 
 
 
