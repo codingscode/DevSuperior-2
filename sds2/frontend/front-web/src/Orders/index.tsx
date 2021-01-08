@@ -5,6 +5,7 @@ import ProductsList from './ProductsList'
 import { OrderLocationdata, Product } from './types'
 import { fetchProducts } from '../api'
 import OrderLocation from './OrderLocation'
+import OrderSummary from './OrderSummary'
 
 
 export default function Orders() {
@@ -24,6 +25,7 @@ export default function Orders() {
             <StepsHeader />
             <ProductsList products={products} />
             <OrderLocation onChangeLocation={location => setOrderLocation(location)} />
+            <OrderSummary />
         </div>
     )
 }
