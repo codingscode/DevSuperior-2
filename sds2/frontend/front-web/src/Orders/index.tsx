@@ -14,6 +14,9 @@ export default function Orders() {
     const [products, setProducts] = useState<Product[]>([])
     const [selectedProducts, setSelectedProducts] = useState<Product[]>([])
     const [orderLocation, setOrderLocation] = useState<OrderLocationdata>()
+    const totalPrice = selectedProducts.reduce((sum, item) => {
+        return sum + item.price
+    }, 0)
 
     console.log(products)
 
@@ -40,7 +43,7 @@ export default function Orders() {
                 <StepsHeader />
                 <ProductsList products={products} onSelectProduct={handleSelectProduct} selectedProducts={selectedProducts} />
                 <OrderLocation onChangeLocation={location => setOrderLocation(location)} />
-                <OrderSummary />
+                <OrderSummary amount={selectedProducts.length} totalPrice={totalPrice} />
             </div>
             <Footer />
         </>
