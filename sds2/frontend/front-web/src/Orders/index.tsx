@@ -6,6 +6,7 @@ import { OrderLocationdata, Product } from './types'
 import { fetchProducts } from '../api'
 import OrderLocation from './OrderLocation'
 import OrderSummary from './OrderSummary'
+import Footer from '../Footer'
 
 
 export default function Orders() {
@@ -21,11 +22,14 @@ export default function Orders() {
     }, [])
 
     return (
-        <div className="orders-container">
-            <StepsHeader />
-            <ProductsList products={products} />
-            <OrderLocation onChangeLocation={location => setOrderLocation(location)} />
-            <OrderSummary />
-        </div>
+        <>
+            <div className="orders-container">
+                <StepsHeader />
+                <ProductsList products={products} />
+                <OrderLocation onChangeLocation={location => setOrderLocation(location)} />
+                <OrderSummary />
+            </div>
+            <Footer />
+        </>
     )
 }
