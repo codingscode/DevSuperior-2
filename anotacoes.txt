@@ -344,4 +344,25 @@ aparece um número do id do pedido
 https://app.netlify.com/
 
 
+parte Mobile:
+react native
+
+no terminal do windows digitar:  npm install --global expo-cli
+no terminal da pasta mobile digitar:  expo init front-mobile -t expo-template-blank-typescript --npm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
