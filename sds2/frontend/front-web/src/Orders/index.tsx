@@ -1,19 +1,20 @@
 import { useState, useEffect } from 'react'
-import './styles.css'
+import { toast } from 'react-toastify'
 import StepsHeader from './StepsHeader'
 import ProductsList from './ProductsList'
-import { OrderLocationdata, Product } from './types'
-import { fetchProducts } from '../api'
+import { OrderLocationData, Product } from './types'
+import { fetchProducts, saveOrder } from '../api'
 import OrderLocation from './OrderLocation'
 import OrderSummary from './OrderSummary'
 import Footer from '../Footer'
 import { checkIsSelected } from './helpers'
+import './styles.css'
 
 
 export default function Orders() {
     const [products, setProducts] = useState<Product[]>([])
     const [selectedProducts, setSelectedProducts] = useState<Product[]>([])
-    const [orderLocation, setOrderLocation] = useState<OrderLocationdata>()
+    const [orderLocation, setOrderLocation] = useState<OrderLocationData>()
     const totalPrice = selectedProducts.reduce((sum, item) => {
         return sum + item.price
     }, 0)
@@ -37,13 +38,29 @@ export default function Orders() {
         }
     }
 
+    const handleSubmit = () => {
+        const productsIds = selectedProducts.map(({ id }) => ({ id }));
+        const payload = {
+          ...orderLocation!,
+          products: productsIds
+        }
+      
+        saveOrder(payload).then(() => {
+          toast.error('Pedido enviado com sucesso!');
+          setSelectedProducts([]);
+        })
+          .catch(() => {
+            toast.warning('Erro ao enviar pedido');
+          })
+    }
+
     return (
         <>
             <div className="orders-container">
                 <StepsHeader />
                 <ProductsList products={products} onSelectProduct={handleSelectProduct} selectedProducts={selectedProducts} />
                 <OrderLocation onChangeLocation={location => setOrderLocation(location)} />
-                <OrderSummary amount={selectedProducts.length} totalPrice={totalPrice} />
+                <OrderSummary amount={selectedProducts.length} totalPrice={totalPrice} onSubmit={handleSubmit} />
             </div>
             <Footer />
         </>
