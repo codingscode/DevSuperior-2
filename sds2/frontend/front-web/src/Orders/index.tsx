@@ -39,18 +39,18 @@ export default function Orders() {
     }
 
     const handleSubmit = () => {
-        const productsIds = selectedProducts.map(({ id }) => ({ id }));
+        const productsIds = selectedProducts.map(({ id }) => ({ id }))
         const payload = {
           ...orderLocation!,
           products: productsIds
         }
       
-        saveOrder(payload).then(() => {
-          toast.error('Pedido enviado com sucesso!');
-          setSelectedProducts([]);
+        saveOrder(payload).then((response) => {
+          toast.error(`Pedido enviado com sucesso! Nº ${response.data.id}`)
+          setSelectedProducts([])
         })
           .catch(() => {
-            toast.warning('Erro ao enviar pedido');
+            toast.warning('Erro ao enviar pedido')
           })
     }
 

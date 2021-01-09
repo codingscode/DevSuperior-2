@@ -337,7 +337,8 @@ digitar no terminal da pasta: npm install --save react-toastify
     );
   }
 
-clicar em fazer pedido
+clicar em fazer pedido. um pedido foi adicionado ver o postman
+aparece um número do id do pedido
 
 
 
