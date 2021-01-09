@@ -361,6 +361,7 @@ no terminal da pasta digitar:
       npm i react-native-gesture-handler
 
 
+clicar em "VER PEDIDOS"
 
 
 

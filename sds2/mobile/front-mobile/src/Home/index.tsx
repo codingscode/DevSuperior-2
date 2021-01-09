@@ -1,26 +1,34 @@
 import React from 'react'
 import { StyleSheet, Text, View, Image } from 'react-native'
 import { RectButton } from 'react-native-gesture-handler'
+import { useNavigation } from '@react-navigation/native'
 
 
 export default function Home() {
-  return (
-     <>
-        <View style={styles.container} >
-            <Image source={require('../assets/deliveryman.png')} />
-            <Text style={styles.title}>Acompanhe os pedidos e{'\n'} entregue no prazo!</Text>
-            <Text style={styles.subTitle}>Receba todos os pedidos do seu{'\n'} restaurante na palma da sua mão</Text>
+
+    const navigation = useNavigation()
         
-        </View>
-        <View style={styles.footer}>
+    const handleOnPress = () => {
+        navigation.navigate('Orders')
+    }
+
+    return (
+        <>
+            <View style={styles.container} >
+                <Image source={require('../assets/deliveryman.png')} />
+                <Text style={styles.title}>Acompanhe os pedidos e{'\n'} entregue no prazo!</Text>
+                <Text style={styles.subTitle}>Receba todos os pedidos do seu{'\n'} restaurante na palma da sua mão</Text>
             
-           
-             <RectButton style={styles.button}>
-                 <Text style={styles.buttonText}>VER PEDIDOS</Text>
-             </RectButton>
-        </View>
-     </>
-  )
+            </View>
+            <View style={styles.footer}>
+                
+            
+                <RectButton style={styles.button}>
+                    <Text style={styles.buttonText} onPress={handleOnPress}>VER PEDIDOS</Text>
+                </RectButton>
+            </View>
+        </>
+    )
 }
 
 const styles = StyleSheet.create({
