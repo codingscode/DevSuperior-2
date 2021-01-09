@@ -350,8 +350,9 @@ react native
 no terminal do windows digitar:  npm install --global expo-cli
 no terminal da pasta mobile digitar:  expo init front-mobile -t expo-template-blank-typescript --npm
 
+no terminal da pasta digitar: expo install @react-navigation/stack @react-native-community/masked-view react-native-screens react-native-gesture-handler @react-navigation/native expo-app-loading @expo-google-fonts/open-sans expo-font
 
-
+https://docs.expo.io/guides/using-custom-fonts/
 
 
 
