@@ -253,7 +253,7 @@ d6kpuq1odjadd5   <- nome base de dados
 
    
 git subtree push --prefix sds2/backend/dsdeliver heroku main
-https://heronnes-sds2.herokuapp.com/
+https://heronnes-sds2.herokuapp.com
 
 
 
@@ -339,6 +339,9 @@ digitar no terminal da pasta: npm install --save react-toastify
 
 clicar em fazer pedido. um pedido foi adicionado ver o postman
 aparece um número do id do pedido
+
+
+https://app.netlify.com/
 
 
 
