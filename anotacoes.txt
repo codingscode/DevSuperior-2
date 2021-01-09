@@ -355,6 +355,19 @@ no terminal da pasta digitar: expo install @react-navigation/stack @react-native
 https://docs.expo.io/guides/using-custom-fonts/
 
 
+no terminal da pasta digitar:
+      npm i hoist-non-react-statics
+      npm install --save react-native-gesture-handler
+      npm i react-native-gesture-handler
+
+
+
+
+
+
+
+
+
 
 
 
