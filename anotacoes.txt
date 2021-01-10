@@ -378,9 +378,10 @@ agora aparece os valores no console
 
 criando loading de página
 
+https://github.com/iamkun/dayjs
 
-
-
+digitar no terminal da pasta: npm i dayjs --save
+dias passados do pedido
 
 
 
