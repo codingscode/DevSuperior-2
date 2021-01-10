@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, ScrollView } from 'react-native'
 import Header from '../Header'
 import OrderCard from '../OrderCard'
 
@@ -10,11 +10,16 @@ export default function Orders() {
     return (
         <>
             <Header />
-            <View style={styles.container} >
+            <ScrollView style={styles.container} >
                 <OrderCard />
                 <OrderCard />
                 <OrderCard />
-            </View>
+                <OrderCard />
+                <OrderCard />
+                <OrderCard />
+                <OrderCard />
+                <OrderCard />
+            </ScrollView>
         </>
     )
 }
