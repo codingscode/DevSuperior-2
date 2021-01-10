@@ -369,7 +369,9 @@ presença de pedidos, mas não há scroll.
 
 agora há scroll
 
+digitar no terminal da pasta:  npm i axios
 
+pressionar em "VER PEDIDOS", aparece 'Network Error' no console
 
 
 
