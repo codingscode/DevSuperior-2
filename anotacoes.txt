@@ -365,6 +365,7 @@ pressionar em "VER PEDIDOS"
 
 pressionar no logo, faz voltar
 
+presença de pedidos, mas não há scroll.
 
 
 
