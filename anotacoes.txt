@@ -373,8 +373,8 @@ digitar no terminal da pasta:  npm i axios
 
 pressionar em "VER PEDIDOS", aparece 'Network Error' no console
 
-
-
+copiar do expo web exp://192.168.1.8:19000 perto do QR code
+agora aparece os valores no console
 
 
 
