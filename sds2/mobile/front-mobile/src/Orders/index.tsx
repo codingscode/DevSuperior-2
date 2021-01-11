@@ -23,8 +23,10 @@ export default function Orders() {
            .finally(() => setIsLoading(false))
     }, [])
 
-    const handleOnPress = () => {
-        navigation.navigate('OrderDetails')
+    const handleOnPress = (order: Order) => {
+        navigation.navigate('OrderDetails', {
+            order
+        })
     }
   
     return (
@@ -33,7 +35,7 @@ export default function Orders() {
             <ScrollView style={styles.container} >
                 {isLoading ? (<Text>Buscando pedidos...</Text>) :
                              (orders.map(order => (
-                                    <TouchableWithoutFeedback key={order.id} onPress={handleOnPress}>
+                                    <TouchableWithoutFeedback key={order.id} onPress={() => handleOnPress(order)}>
                                         <OrderCard order={order} />
                                     </TouchableWithoutFeedback>
                                 ))

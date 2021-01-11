@@ -2,10 +2,19 @@ import React from 'react'
 import { StyleSheet, Text, View, Image } from 'react-native'
 
 import { useNavigation } from '@react-navigation/native'
+import Header from '../Header'
+import { Order } from '../types'
 
+type Props = {
+    route: {
+       params: {
+          order: Order
+       }
+    }
+}
 
-
-export default function OrderDetails() {
+export default function OrderDetails({ route }: Props) {
+    const order = route.params.order // ou const { order } = route.params
     const navigation = useNavigation()
           
     const handleOnPress = () => {
@@ -13,9 +22,12 @@ export default function OrderDetails() {
     }
 
     return (
-       <View>
-           <Text>Detalhes do pedido</Text>
-       </View>
+        <>
+           <Header />
+           <View>
+              <Text>Detalhes do pedido {order.id}</Text>
+           </View>
+        </>
     )
 }
 
