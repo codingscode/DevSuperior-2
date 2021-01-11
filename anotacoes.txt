@@ -387,7 +387,7 @@ clicar no card de pedidos para ver detalhes
 
 clicar em "CONFIRMAR ENTREGA". Pedidos feitos saem da lista.
 
-
+usando junto com google maps. Clicando em "INICIAR NAVEGAÇÃO"
 
 
 
