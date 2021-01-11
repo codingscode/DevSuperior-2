@@ -5,7 +5,7 @@ import { fetchOrders } from '../api'
 import Header from '../Header'
 import OrderCard from '../OrderCard'
 import { Order } from '../types'
-import { useNavigation } from '@react-navigation/native'
+import { useIsFocused, useNavigation } from '@react-navigation/native'
 
 
 
@@ -13,15 +13,21 @@ export default function Orders() {
     const [orders, setOrders] = useState<Order[]>([])
     const [isLoading, setIsLoading] = useState(false)
     const navigation = useNavigation()
+    const isFocused = useIsFocused()
 
-
-    useEffect(() => {
+    const fetchData = () => {
         setIsLoading(true)
         fetchOrders()
            .then(response => setOrders(response.data))
            .catch(() => Alert.alert('Houve um erro ao buscar os pedidos!'))
            .finally(() => setIsLoading(false))
-    }, [])
+    }
+
+    useEffect(() => {
+        if (isFocused) {
+            fetchData()
+        }
+    }, [isFocused])
 
     const handleOnPress = (order: Order) => {
         navigation.navigate('OrderDetails', {

@@ -385,7 +385,7 @@ dias passados do pedido
 
 clicar no card de pedidos para ver detalhes
 
-clicar em "CONFIRMAR ENTREGA"
+clicar em "CONFIRMAR ENTREGA". Pedidos feitos saem da lista.
 
 
 
