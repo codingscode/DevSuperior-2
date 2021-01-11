@@ -383,6 +383,6 @@ https://github.com/iamkun/dayjs
 digitar no terminal da pasta: npm i dayjs --save
 dias passados do pedido
 
-
+clicar no card de pedidos para ver detalhes
 
 

@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import { Order } from '../types'
 import dayjs from 'dayjs'
 import 'dayjs/locale/pt-br'
-
+import 'intl'
 
 dayjs.locale('pt-br')
 dayjs.extend(relativeTime)
@@ -17,6 +17,7 @@ import relativeTime from 'dayjs/plugin/relativeTime'
 function dateFromNow(date: string) {
    return dayjs(date).fromNow()
 }
+
 
 export default function OrderCard({ order }: Props) {
   

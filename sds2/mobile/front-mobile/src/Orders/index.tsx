@@ -5,12 +5,14 @@ import { fetchOrders } from '../api'
 import Header from '../Header'
 import OrderCard from '../OrderCard'
 import { Order } from '../types'
+import { useNavigation } from '@react-navigation/native'
 
 
 
 export default function Orders() {
     const [orders, setOrders] = useState<Order[]>([])
     const [isLoading, setIsLoading] = useState(false)
+    const navigation = useNavigation()
 
 
     useEffect(() => {
@@ -20,6 +22,10 @@ export default function Orders() {
            .catch(() => Alert.alert('Houve um erro ao buscar os pedidos!'))
            .finally(() => setIsLoading(false))
     }, [])
+
+    const handleOnPress = () => {
+        navigation.navigate('OrderDetails')
+    }
   
     return (
         <>
@@ -27,7 +33,7 @@ export default function Orders() {
             <ScrollView style={styles.container} >
                 {isLoading ? (<Text>Buscando pedidos...</Text>) :
                              (orders.map(order => (
-                                    <TouchableWithoutFeedback key={order.id}>
+                                    <TouchableWithoutFeedback key={order.id} onPress={handleOnPress}>
                                         <OrderCard order={order} />
                                     </TouchableWithoutFeedback>
                                 ))
